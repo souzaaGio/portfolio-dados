@@ -2,7 +2,7 @@
 
 Projeto prático de Engenharia de Dados para iniciantes, desenvolvido do zero para aprender a manipular tabelas e bancos de dados em Python.
 
-O script simula o ciclo completo de um processo **ETL** (Extract, Transform, Load): pega dados brutos e desorganizados de vendas, aplica regras de limpeza e salva o resultado em um banco de dados relacional.
+O script simula o ciclo completo de um processo **ETL** (Extract, Transform, Load): lê dados brutos e desorganizados de vendas de um arquivo CSV, aplica regras de limpeza e salva o resultado em um banco de dados relacional.
 
 ## Tecnologias
 
@@ -13,7 +13,7 @@ O script simula o ciclo completo de um processo **ETL** (Extract, Transform, Loa
 
 ## O que o código faz
 
-1. **Extração:** cria uma tabela (DataFrame) a partir de dados de vendas intencionalmente bagunçados (nomes fora de padrão, preços como texto e valores nulos).
+1. **Extração:** lê o arquivo `vendas_sujas.csv`, que tem dados intencionalmente bagunçados (nomes fora de padrão, preços como texto e valores nulos).
 2. **Transformação:**
    * substitui valores nulos em `quantidade` por `1` (`.fillna()`)
    * padroniza os nomes dos clientes (`.str.title()`)

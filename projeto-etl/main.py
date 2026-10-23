@@ -5,12 +5,7 @@ import sqlite3
 print("=== INICIANDO O PROJETO ETL ===")
 
 # 2. Criamos um dicionário comum com os dados bagunçados da nossa loja
-dados_bagunçados = {
-    "cliente": ["Ana Silva", "bruno souza", "CARLOS OLIVEIRA"],
-    "preco": ["R$ 3.500,00", "R$ 120,00", "R$ 350,00"],
-    "quantidade": [1, 2, None],
-}
-tabela = pd.DataFrame(dados_bagunçados)
+tabela = pd.read_csv("vendas_sujas.csv")
 print(tabela)
 
 tabela["quantidade"] = tabela["quantidade"].fillna(1)
