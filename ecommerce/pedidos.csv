@@ -1,0 +1,7 @@
+pedido_id,cliente_id,data,produto,valor
+101,1,2026-09-03,notebook,3500
+102,2,2026-09-15,mouse,120
+103,1,2026-10-02,teclado,350
+104,3,2026-10-10,monitor,980
+105,4,2026-10-12,mouse,80
+106,2,2026-10-20,notebook,3400
